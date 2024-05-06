@@ -1,0 +1,30 @@
+<div>
+	<div class="row">
+		<div class="col">
+			<h1>Perros</h1>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>id</th>
+						<th>name</th>
+						<th>age</th>
+					</tr>
+				</thead>
+				<tbody>
+					@for (dog of dogs; track dog) {
+					<tr>
+						<td>{{dog.id}}</td>
+						<td>{{dog.name}}</td>
+						<td>{{dog.age}}</td>
+					</tr>
+					}
+				</tbody>
+			</table>
+		</div>
+	</div>
+
+</div>
